@@ -6,11 +6,12 @@ function App() {
     <div className="App">
       <div className="calculator" id="calculator">
         <div className="display" id="display">
-          <p>Answer is:</p>
+          <h3>Answer is:</h3>
+          <p></p>
         </div>
         <div className="interface" id="interface">
           <div className="clear button" id="clear"><p>C</p></div>
-          <div className="parenthesis button" id="parenthesis"><p>()</p></div>
+          <div className="parenthesis button" id="parenthesis"><p>( )</p></div>
           <div className="percent button" id="percent"><p>%</p></div>
           <div className="divide button" id="divide"><p>/</p></div>
           <div className="seven button" id="seven"><p>7</p></div>
@@ -20,7 +21,7 @@ function App() {
           <div className="four button" id="four"><p>4</p></div>
           <div className="five button" id="five"><p>5</p></div>
           <div className="six button" id="six"><p>6</p></div>
-          <div className="minus button" id="minus"><p>-</p></div>
+          <div className="subtract button" id="subtract"><p>-</p></div>
           <div className="one button" id="one"><p>1</p></div>
           <div className="two button" id="two"><p>2</p></div>
           <div className="three button" id="three"><p>3</p></div>

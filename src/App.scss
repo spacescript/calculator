@@ -8,8 +8,8 @@
   .calculator {
     display: grid;
     grid-template-rows: 30% 70%;
-    width: 65vw;
-    height: 80vh;
+    width: 600px;
+    height: 825px;
     background-color: #32405c;
     padding: 30px;
     .display {
@@ -33,9 +33,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #00c8e2;
+        cursor: pointer;
+        user-select: none; /* supported by Chrome and Opera */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
       }
       .button p {
         font-size: 30px;
+      }
+      .button:active {
+        background-color: #969696;
+        transform: scale(.90);
       }
     }
   }
@@ -51,3 +62,7 @@
   font-size: calc(10px + 2vmin);
   color: white; 
 }
+
+// @media
+// width: 65vw;
+//     height: 80vh;

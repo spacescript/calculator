@@ -2,15 +2,24 @@ import React from 'react';
 import './App.scss';
 
 function App() {
+  // const display = document.getElementById('display');
+  // display.innerHTML = 'Testing here'
+  document.getElementById('display').innerHTML = 'Testing here'
+
+  function myReset() {
+    let thisDisplay = document.getElementById('display');
+    thisDisplay.innerHTML = '';
+  }
+
   return (
     <div className="App">
       <div className="calculator" id="calculator">
-        <div className="display" id="display">
+        <div className='screen' id='screen'>
           <h3>Answer is:</h3>
-          <p></p>
+          <p className="display" id="display"></p>
         </div>
         <div className="interface" id="interface">
-          <div className="clear button" id="clear"><p>C</p></div>
+          <div className="clear button" id="clear" onClick={myReset}><p>C</p></div>
           <div className="parenthesis button" id="parenthesis"><p>( )</p></div>
           <div className="percent button" id="percent"><p>%</p></div>
           <div className="divide button" id="divide"><p>/</p></div>

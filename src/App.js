@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState, useReducer } from 'react';
 import './App.scss';
 // import { useState } from 'react';
 
+function reducer(state, { type, payload }) {
+  return {count: state.count}
+}
+
 function App() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 })
+  const [count, setCount] = useState('');
   // const display = document.getElementById('display');
   // let display = document.getElementById('display').innerHTML;
   // display.innerHTML = 'Testing here';
